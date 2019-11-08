@@ -1,4 +1,4 @@
-/* Este asterico abarca absolutamente todo ene sta pagina */ 
+/* Este asterico abarca absolutamente todo ene sta pagina */
 
 * {
   margin: 0;
@@ -7,27 +7,34 @@
 
 /* Header */
 
+.logoVolti{
+  position: absolute;
+  left: 3vh;
+}
+
 .headervolti {
   color: white;
   padding: 5px;
   margin-left: 20px;
-
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   background-color:rgba(133, 11, 11, 0.863);
-  position: fixed;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
+  height: 8vh;
 }
 
 .abarcosecciones {
   margin-right: 20px;
   display: flex;
   flex-direction: row;
-  
-  
+  text-align: center;
+
 }
 
 .secciones {
@@ -35,8 +42,8 @@
   text-decoration: none;
   list-style: none;
   color: white;
-  margin-left: 30px;
   position: relative;
+  right: 2vh;
 }
 
 .secciones a::before {
@@ -45,20 +52,45 @@
   height: 5px;
   width: 100%;
   background-color: white;
-  
+
   position: absolute;
   top: 0;
   width: 0%;
- 
 }
 
 .secciones a:hover::before {
 width: 100%;
-
 }
 
+.buscador{
+  border-radius: 40px;
+  height: 4vh;
+  position: absolute;
+  right: 3vh;
+}
 
+/* esto es donde hace el dropdown generos */
+div.dropdownBarra{
+  position: absolute;
+  top: 8vh;
+  left: -3vh;
+  background-color: black;
+  opacity: 0;
+  border-radius: 20px;
+  width: 25vh;
+  height: 75vh;
+  text-decoration: none;
+  list-style: none;
+}
 
+a.listaGeneros:hover div.dropdownBarra{
+  opacity: 0.7;
+}
+
+ul.gen{
+  text-decoration: none;
+  list-style: none;  
+}
 
 a {
   text-decoration: none;
@@ -74,7 +106,7 @@ body {
 
 /* Uso VH UNIT para acomodar imagen */
 #showcase {
-  background-image: url(../img/fondo.jpg); 
+  background-image: url(../img/fondo.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -122,15 +154,15 @@ body {
 #section-b {
   padding: 20px;
   background-color: #f4f4f4;
-  
+
   text-align: center;
-  
+
 }
 
 #section-c {
   display: flex;
   justify-content:  center;
-  
+
 }
 
 #section-c div{
@@ -152,17 +184,17 @@ body {
 }
 
 #section-c .box-1:hover {
- 
+
   color: black;
   cursor: pointer;
 }
 #section-c .box-2:hover {
-   
+
   color: black;
   cursor: pointer;
 }
 #section-c .box-3:hover {
-   
+
   color: black;
   cursor: pointer;
 }
@@ -189,7 +221,7 @@ margin: 10px 5px;
 
 .seriesalairehoy {
   text-align: center;
-  
+
   height: 100px;
 border: dashed;
 margin: 10px 5px;
@@ -199,7 +231,7 @@ margin: 10px 5px;
 /* Footer */
 
 #section-a {
-  
+
   padding: 20px;
   background-color: f9f9f9;
   color:rgba(133, 11, 11, 0.863);
@@ -208,10 +240,10 @@ margin: 10px 5px;
 }
 
 .footer {
-  
+
   background-color: rgba(133, 11, 11, 0.863);
-  
- 
+
+
 
 }
 
@@ -227,29 +259,27 @@ margin: 10px 5px;
   padding-left: 9px;
   padding-top: 4px;
   color: white;
-  
-  
+
+
 }
-
-
 
 .subfooter {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  
-  
-  
+
+
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
+
+
 }
 
 .loguito {
   margin-top: 10px;
-  
+
 }
 
 a {

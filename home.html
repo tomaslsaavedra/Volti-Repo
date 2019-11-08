@@ -4,29 +4,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/home.css">
-  <script src="/js/home.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/javaGeneral.js"></script>
   <title>Volti
-
   </title>
 </head>
 <body>
   <div class="header">
 
-    <div>
-      <p class="headervolti">Volti</p>
+    <div class="logoVolti">
+        <img src="img/logoVolti.png" alt="100" width="100">
     </div>
+
     <div>
       <ul class="abarcosecciones" >
         <li class="secciones"><a href="home.html"> P1 Home </a></li>
-        <li class="secciones"><a href="listaGeneros.html"> P2 ListaGeneros </a></li>
-        <li class="secciones"><a href="seriesPorGenero.html"> P3 SeriesxGenero</a></li>
+        <li class="secciones"><a class="listaGeneros" href="listaGeneros.html">
+             <div class="dropdownBarra">
+                   <div class="uk-navbar-dropdown">
+                       <ul class="uk-nav uk-navbar-dropdown-nav gen">
+                       </ul>
+                   </div>
+             </div>
+              P2&3 Generos </a>
+       </li>
         <li class="secciones"><a href="buscador.html"> P4 Buscador</a></li>
         <li class="secciones"><a href="detalleSerie.html"> P5 DetalleSerie</a></li>
-        <li class="secciones"><a href="buscadorAvanzado.html"> P6 BuscadorAvanzado </a></li>
+        <li class="secciones"><a href="buscadorAvanzado.html"> P6 BuscadorAv </a></li>
       </ul>
-
     </div>
-    <input type="text" placeholder="Search.." width="80px">
+    <input  class="buscador" type="text" placeholder="Search.." width="80px">
   </div>
 
   <header id="showcase">
@@ -86,13 +93,16 @@
                       <div class="subfooter">
                           <a href="mailto:info@volti.com">info@volti.com</a>
                        <div class="loguitos">
-                      <img class="loguito" src="/img/logo tmbd.png" alt="50" width="50">
+                      <img src="img/logoVolti.png" alt="100" width="100">
+                      &nbsp;&nbsp;
+                      <img class="loguito" src="img/logo tmbd.png" alt="50" width="50">
 
                     </div>
                     </div>
                   </footer>
             </section>
       </section>
+
 
 </body>
 </html>
