@@ -75,23 +75,23 @@ div.dropdownBarra{
   top: 8vh;
   left: -3vh;
   background-color:rgba(133, 11, 11, 0.863);
-  opacity: 0;
+  opacity: 0.7;
   border-radius: 20px;
   width: 25vh;
   height: 70vh;
   text-decoration: none;
   list-style: none;
+  display: none;
 }
 
 li.listaGeneros:hover div.dropdownBarra{
-  opacity: 0.7;
+  display: block;
 }
 
 ul.gen{
   text-decoration: none;
   list-style: none;
 }
-
 
 a {
   text-decoration: none;
