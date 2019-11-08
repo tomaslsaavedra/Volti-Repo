@@ -1,6 +1,6 @@
 // esto es para el menu que se desplaza para abajo cuando te paras arriba de generos
 
-fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES")
+fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
   .then(function(respuesta) {
     return respuesta.json()
     console.log(respuesta);
@@ -25,11 +25,4 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=3e7db3a288e409d2f18
 
     document.querySelector("form.buscar").onsubmit = function(e) {
     var busco = document.buscar.buscador.value;
-    // var buscadorInput = document.querySelector("input")
-    if (busco.length <= 3) {
-      e.preventDefault()
-      UIkit.notification({message: 'Ingrese mas de tres caracteres', status: 'warning',  timeout: 2000})
-  }else {
-
-  }
 }
