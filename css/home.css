@@ -33,8 +33,10 @@ div.contenedorTitulos{
     border-bottom: 1px solid #bbb;
 }
 
+ /*buscador*/
+
 .contenedorBuscador{
-position:absolute;
+position: absolute;
 right: 4vh;
 top: 3vh;
 }
@@ -43,9 +45,13 @@ top: 3vh;
   border-radius: 40px;
   height: 4vh;
   justify-content: center;
+  display: flex;
 }
 
-
+.iconoBuscador{
+  color:white;
+    height: 8vh;
+}
 
 body {
   margin:0;
@@ -54,6 +60,8 @@ body {
   color: rgba(133, 11, 11, 0.863);
   line-height: 1.6;
 }
+
+
 
 /* Uso VH UNIT para acomodar imagen */
 #showcase {

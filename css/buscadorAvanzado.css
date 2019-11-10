@@ -45,7 +45,25 @@ top: 3vh;
   justify-content: center;
 }
 
+/*buscador*/
 
+.contenedorBuscador{
+position: absolute;
+right: 4vh;
+top: 3vh;
+}
+
+.buscador{
+ border-radius: 40px;
+ height: 4vh;
+ justify-content: center;
+ display: flex;
+}
+
+.iconoBuscador{
+ color:white;
+   height: 8vh;
+}
 
 body {
   margin:0;

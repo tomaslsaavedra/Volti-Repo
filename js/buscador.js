@@ -1,40 +1,56 @@
-var imgsContainer = document.querySelector('#imgs_container');
+/* buscador */
 
-var queryString = new URLSearchParams(location.search);
-var palabra = queryString.get('search_word') || queryString.get('categories');
+window.onload = function() {
+  var queryString = new URLSearchParams(location.search)
+  var busco = queryString.get("buscador")
+  var usuario = localStorage.getItem("user")
+  if (usuario != null) {
+    document.querySelector("button.btn-log").style.display = "none"
+    document.querySelector("li.prefes").style.display = "block"
+    document.querySelector("li.saludop").style.display = "block"
+    document.querySelector("p.saludo").innerHTML = "Hola " + usuario
+    document.querySelector("li.lg").style.display = "block"
 
-var url = `https://api.themoviedb.org/3/movie/550?api_key=a1e2e77e06992c7268ba546a2ad533e9`;
 
-console.log(url);
+  }
+  var cont= 2;
+  window.onscroll = function(ev) {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        fetch("https://api.themoviedb.org/3/search/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&query="+busco+"&page="+ cont+"&include_adult=false")
+          .then(function(respuesta) {
+            return respuesta.json()
+            console.log(respuesta);
+          })
+          .then(function(informacion) {
+                var arrayBusqueda = informacion.results
+                console.log(arrayBusqueda);
+                for (var i = 0; i < arrayBusqueda.length; i++) {
+                  var png = arrayBusqueda[i].poster_path;
+                  var id = arrayBusqueda[i].id
+                  document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=pelicula.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+                }
+          })
+          .catch(function(error) {
+            console.log("Error: " + error);
+          })
+      }
+  };
 
-fetch(url)
-	.then(function (res) {
-		return res.json();
-	})
-	.then(function (informacion) {
-
-		console.log(informacion);
-
-		var imagesArray = informacion.data;
-
-		if (imagesArray.length > 0) {
-			for (var oneImg of imagesArray) {
-				var imgId = oneImg.id;
-				var imgSrc = oneImg.images.downsized.url;
-				imgsContainer.innerHTML += `
-				<div class="img-wrapper">
-					<a href="detalle-gif.html?idGif=${imgId}">
-						<img src="${imgSrc}" alt="lorem ipsum">
-					</a>
-				</div>
-			`;
-			}
-		} else {
-			alert('¡No se encontró nada!');
-			location.href = 'buscador.html';
-		}
-
-	})
-	.catch(function (errors) {
-		console.log(errors);
-	});
+fetch("https://api.themoviedb.org/3/search/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&query="+busco+"&page=1&include_adult=false")
+  .then(function(respuesta) {
+    return respuesta.json()
+    console.log(respuesta);
+  })
+  .then(function(informacion) {
+        var arrayBusqueda = informacion.results
+        console.log(arrayBusqueda);
+        for (var i = 0; i < arrayBusqueda.length; i++) {
+          var png = arrayBusqueda[i].poster_path;
+          var id = arrayBusqueda[i].id
+          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=pelicula.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+        }
+  })
+  .catch(function(error) {
+    console.log("Error: " + error);
+  })
+}
