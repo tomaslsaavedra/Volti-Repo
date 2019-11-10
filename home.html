@@ -6,32 +6,43 @@
   <link rel="stylesheet" href="css/home.css">
   <script src="js/home.js"></script>
   <script src="js/javaGeneral.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
   <title>Volti
   </title>
 </head>
 <body>
-  <div class="header">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="contenedorTitulos">
+      <div class="uk-navbar-left">
+          <ul class="uk-navbar-nav">
+              <li class="uk-active"><a href="home.html"><img class="nav-logo" src="img/logoVolti.png"></a></li>
+          </ul>
+      </div>
+      <div class="uk-navbar-center">
+          <ul class="uk-navbar-nav">
+            <li class="li-line">
+              <a class="li-a" href="home.html">Home</a>
+            </li>
+              <li  class="li-line">
+                  <a class="li-a" href="listaGeneros.html">Generos</a>
+                  <div class="uk-navbar-dropdown">
+                      <ul class="uk-nav uk-navbar-dropdown-nav gen">
+                      </ul>
+                  </div>
+              </li>
+              <li class="li-line">
+                <a class="li-a" href="buscadorAvanzado.html">Buscador Avanzado</a>
+              </li>
+          </ul>
+      </div>
+      <div class="contenedorBuscador">
+          <input  class="buscador" type="text" placeholder="Search.." width="80px">
+      </div>
+      </div>
+  </nav>
 
-    <div class="logoVolti">
-        <img src="img/logoVolti.png" alt="100" width="100">
-    </div>
-
-    <div>
-      <ul class="abarcosecciones" >
-        <li class="secciones"><a href="home.html"> P1 Home </a></li>
-        <li class="secciones listaGeneros" id="listaGeneros"><a href="listaGeneros.html"> P2&3 Generos </a>
-          <div class="dropdownBarra">
-                    <br>
-                    <ul class="nav gen"></ul>
-          </div>
-        </li>
-        <li class="secciones"><a href="buscador.html"> P4 Buscador </a></li>
-        <li class="secciones"><a href="detalleSerie.html"> P5 DetalleSerie </a></li>
-        <li class="secciones"><a href="buscadorAvanzado.html"> P6 BuscadorAv </a></li>
-      </ul>
-    </div>
-    <input  class="buscador" type="text" placeholder="Search.." width="80px">
-  </div>
 
   <header id="showcase">
     <h1 class="bienvenidos">Bienvenidos a  Volti </h1>
@@ -81,11 +92,7 @@
               <div class="footer">
                   <footer>
                     <div class="containerapellidos">
-                      <p class="apellidos">Manuel Eduardo Firpo</p>
-                      <p class="apellidos">Tomas Lopez Saavedra</p>
-                      <p class="apellidos">Agustin Cutre</p>
-
-
+                      <p class="apellidos">Manuel Eduardo Firpo  &nbsp;|&nbsp; Tomas Lopez Saavedra  &nbsp;|&nbsp; Agustin Cutre</p>
                     </div>
                       <div class="subfooter">
                           <a href="mailto:info@volti.com">info@volti.com</a>
