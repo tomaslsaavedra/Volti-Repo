@@ -27,7 +27,7 @@ window.onload = function() {
                 for (var i = 0; i < arrayBusqueda.length; i++) {
                   var png = arrayBusqueda[i].poster_path;
                   var id = arrayBusqueda[i].id
-                  document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=pelicula.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+                  document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
                 }
           })
           .catch(function(error) {
@@ -47,7 +47,7 @@ fetch("https://api.themoviedb.org/3/search/movie?api_key=3e7db3a288e409d2f1823c5
         for (var i = 0; i < arrayBusqueda.length; i++) {
           var png = arrayBusqueda[i].poster_path;
           var id = arrayBusqueda[i].id
-          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=pelicula.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
+          document.querySelector(".ul-fotos").innerHTML += "<li class="+"li-item"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img class="+"img-li"+" src=" + "https://image.tmdb.org/t/p/w185" +png+"></a>"
         }
   })
   .catch(function(error) {

@@ -73,6 +73,30 @@ body {
   line-height: 1.6;
 }
 
+/*listado pelicuals por genero */
+#main{
+  margin-top: 10px;
+}
+
+.prox{
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.ul-fotos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style:none;
+  position: relative;
+  right: 13px;
+}
+
+.fotoswrap{
+  min-height: 100vh;
+}
+
 /* Footer */
 
 #section-a {

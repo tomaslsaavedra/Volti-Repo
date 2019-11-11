@@ -73,6 +73,31 @@ body {
   line-height: 1.6;
 }
 
+/* aca van los estilos de los detalles de las peliculas */
+.mov-vid{
+  width: 560px;
+  height: 315px;
+  margin-left: 15px;
+}
+
+.movie{
+  margin-top: 10px;
+  display: flex;
+}
+.img-peli{
+  margin-left: 10px;
+}
+.txt{
+  margin-left: 10px;
+  width: 37%;
+}
+
+.prox{
+  font-size: 32px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
 /* Footer */
 
 #section-a {
