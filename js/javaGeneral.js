@@ -1,6 +1,6 @@
 // esto es para el menu que se desplaza para abajo cuando te paras arriba de generos
 
-fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
+fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
   .then(function(respuesta) {
     return respuesta.json()
     console.log(respuesta);

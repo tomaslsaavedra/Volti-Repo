@@ -28,21 +28,10 @@ div.contenedorTitulos{
   font-family: sans-serif;
 }
 
+/* esto va a ser para el downbar del navegador */
 .uk-navbar-container:not(.uk-navbar-transparent) {
     background: #333;
     border-bottom: 1px solid #bbb;
-}
-
-.contenedorBuscador{
-position:absolute;
-right: 4vh;
-top: 3vh;
-}
-
-.buscador{
-  border-radius: 40px;
-  height: 4vh;
-  justify-content: center;
 }
 
 /*buscador*/

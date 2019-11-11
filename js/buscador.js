@@ -16,7 +16,7 @@ window.onload = function() {
   var cont= 2;
   window.onscroll = function(ev) {
       if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-        fetch("https://api.themoviedb.org/3/search/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&query="+busco+"&page="+ cont+"&include_adult=false")
+        fetch("https://api.themoviedb.org/3/search/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&query="+busco+"&page="+ cont+"&include_adult=false")
           .then(function(respuesta) {
             return respuesta.json()
             console.log(respuesta);
@@ -36,7 +36,7 @@ window.onload = function() {
       }
   };
 
-fetch("https://api.themoviedb.org/3/search/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&query="+busco+"&page=1&include_adult=false")
+fetch("https://api.themoviedb.org/3/search/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&query="+busco+"&page=1&include_adult=false")
   .then(function(respuesta) {
     return respuesta.json()
     console.log(respuesta);

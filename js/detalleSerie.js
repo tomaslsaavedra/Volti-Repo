@@ -3,8 +3,8 @@ window.onload = function() {
   var idPeli = queryString.get("idPeli")
   var genero = queryString.get("genero")
 
-  //DATA DE PELI
-  fetch("https://api.themoviedb.org/3/movie/"+idPeli+"?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES")
+  //DATA DE  SERIE
+  fetch("https://api.themoviedb.org/3/tv/"+idPeli+"?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
     .then(function(respuesta) {
       return respuesta.json()
       console.log(respuesta);
@@ -70,7 +70,7 @@ window.onload = function() {
     })
 
   //TRAILER
-  fetch("https://api.themoviedb.org/3/movie/"+idPeli+"/videos?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES")
+  fetch("https://api.themoviedb.org/3/tv/"+idPeli+"/videos?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
     .then(function(respuesta) {
       return respuesta.json()
       console.log(respuesta);
@@ -91,7 +91,7 @@ window.onload = function() {
     })
 
       //RELACIONADAS
-      fetch("https://api.themoviedb.org/3/movie/"+idPeli+"/similar?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&page=1")
+      fetch("https://api.themoviedb.org/3/movie/"+idPeli+"/similar?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&page=1")
       .then(function(data) {
         return data.json()
         console.log(data);
@@ -118,7 +118,7 @@ window.onload = function() {
 
 
     //ESTO ES Generos
-    fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES")
+    fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
       .then(function(respuesta) {
         return respuesta.json()
         console.log(respuesta);

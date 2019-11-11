@@ -1,4 +1,4 @@
-//constructor para agarrar la variable genero y  poner las peliculas
+//constructor para agarrar la variable genero y  poner las series
 window.onload = function() {
 var queryString = new URLSearchParams(location.search)
 var idGenero = queryString.get("idGenero")
@@ -6,8 +6,8 @@ var genero = queryString.get("genero")
 // esto es para que se ponga el titulo del genero segun genero
   document.querySelector(".prox").innerHTML += genero
 
-//PELICUALAS POR GENERO
-fetch("https://api.themoviedb.org/3/discover/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres="+idGenero+"")
+//SERIES POR GENERO
+fetch("https://api.themoviedb.org/3/discover/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres="+idGenero+"")
   .then(function(respuesta) {
     return respuesta.json()
     console.log(respuesta);
@@ -25,11 +25,11 @@ fetch("https://api.themoviedb.org/3/discover/movie?api_key=3e7db3a288e409d2f1823
     console.log("Error: " + error);
   })
 
-/* scroll para que ponga mas peliculas automaticamente al bajar */
+/* scroll para que ponga mas series automaticamente al bajar */
   var cont= 2; //esto va incrementando para el codigo. pongo 2 para que traiga la pagina 2 del genero tal
 window.onscroll = function(ev) {
     if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
-      fetch("https://api.themoviedb.org/3/discover/movie?api_key=3e7db3a288e409d2f1823c536f9d81f0&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page="+ cont+"&with_genres="+idGenero+"")
+      fetch("https://api.themoviedb.org/3/discover/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page="+ cont+"&with_genres="+idGenero+"")
         .then(function(respuesta) {
           return respuesta.json()
           console.log(respuesta);
