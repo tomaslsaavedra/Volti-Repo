@@ -166,14 +166,14 @@ body {
 
 .seriespopulares {
   text-align: center;
-  height: 100px;
+  padding: 25px;
 border: dashed;
 margin: 10px 5px;
 }
 
 .seriesconmayorpuntaje {
   text-align: center;
-  height: 100px;
+  padding: 25px;
 border: dashed;
 margin: 10px 5px;
 }
@@ -181,7 +181,7 @@ margin: 10px 5px;
 .seriesalairehoy {
   text-align: center;
 
-  height: 100px;
+ padding: 25px;
 border: dashed;
 margin: 10px 5px;
 }
