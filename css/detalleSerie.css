@@ -41,7 +41,7 @@ right: 4vh;
 top: 3vh;
 }
 
-.buscador{
+.buscar{
  border-radius: 40px;
  height: 4vh;
  justify-content: center;
@@ -59,6 +59,7 @@ body {
   font-size:17px;
   color: rgba(133, 11, 11, 0.863);
   line-height: 1.6;
+     background-image:url("../img/colorFondo.png");
 }
 
 /* aca van los estilos de los detalles de las peliculas */
@@ -66,18 +67,21 @@ body {
   width: 560px;
   height: 315px;
   margin-left: 15px;
+  position: relative;
+  left: 40vh;
 }
 
 .movie{
-  margin-top: 10px;
+  margin-top:8vh;
   display: flex;
+  justify-content: center;
 }
 .img-peli{
   margin-left: 10px;
 }
 .txt{
-  margin-left: 10px;
-  width: 37%;
+  margin-left: 4vh;
+  width: 60%;
 }
 
 .prox{

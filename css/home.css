@@ -41,7 +41,7 @@ right: 4vh;
 top: 3vh;
 }
 
-.buscador{
+.buscar{
   border-radius: 40px;
   height: 4vh;
   justify-content: center;
@@ -59,6 +59,7 @@ body {
   font-size:17px;
   color: rgba(133, 11, 11, 0.863);
   line-height: 1.6;
+     background-image:url("../img/colorFondo.png");
 }
 
 
