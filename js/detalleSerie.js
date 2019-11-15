@@ -76,19 +76,29 @@ window.onload = function() {
     })
 
   //TRAILER
-  fetch("https://api.themoviedb.org/3/tv/"+idPeli+"/videos?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES")
+  fetch("https://api.themoviedb.org/3/tv/"+idPeli+"/videos?api_key=e31dd59fefbc10e65215ecd077762f57&language=en-US")
     .then(function(respuesta) {
       return respuesta.json()
       console.log(respuesta);
     })
     .then(function(informacion) {
-      var peli = informacion.results
-      var nombre = peli.name
-      var id = peli[0].key
-      var url = 'https://www.youtube.com/embed/' + id
-      var li;
-      li = '<iframe width="800" height="315" src='+ url+' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-
+      console.log(informacion);
+      var array = informacion.results
+      //nunca poner la variable nombre definida .name dentro de un for.
+      //cuando hallan muchos objetos se puede romper
+      var nombre = ""
+      var li = '';
+      for (var i = 0; i < array.length; i++) {
+          nombre = array.name
+          var id = array[i].key
+          var url = 'https://www.youtube.com/embed/' + id
+    // aca creo la cadena de videos para que aparezcan mas de uno
+          //li += '<li>' //+= es para que agarre y cree un li sin tapar el anterior
+          li += '<iframe width="520" height="315" src='+ url+' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+          //li += '</li>'
+          console.log(li);
+      }
+//esto va a cumplir la funcion de agarrar y ejecutar. innerHTML va a ejecutar lo que arme con los "Li"
       document.querySelector(".mov-vid").innerHTML += li
 
     })

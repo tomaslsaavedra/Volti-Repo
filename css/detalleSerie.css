@@ -63,13 +63,14 @@ body {
 }
 
 /* aca van los estilos de los detalles de las peliculas */
+
 .mov-vid{
-  width: 560px;
-  height: 315px;
-  margin-left: 15px;
-  position: relative;
-  left: 40vh;
+  margin: 2px 5px;
+  box-sizing: border-box ;
+  Flex-wrap: wrap;
+  Justify-content: space-between;
 }
+
 
 .movie{
   margin-top:8vh;
@@ -89,6 +90,23 @@ body {
   font-family: sans-serif;
   text-align: center;
 }
+
+/* boton modal */
+
+.contenedorBotonRecomendadas{
+  position: relative;
+  left: 80vh;
+  padding: 5vh;
+  align-items: center;
+}
+
+.contenedorBotonRecomendadas2{
+  position: relative;
+  left: 80vh;
+  padding: 5vh;
+  align-items: center;
+}
+
 
 /* Footer */
 

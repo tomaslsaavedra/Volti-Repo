@@ -25,6 +25,26 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=e31dd59fefbc10e65215ecd0
     console.log("Error: " + error);
   })
 
+  // carrousel
+
+  fetch("https://api.themoviedb.org/3/discover/tv?api_key=e31dd59fefbc10e65215ecd077762f57&language=es-ES&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres="+idGenero+"")
+    .then(function(respuesta) {
+      return respuesta.json()
+      console.log(respuesta);
+    })
+    .then(function(informacion) {
+      var arrayDeMovies = informacion.results
+      for (var i = 0; i < 8; i++) {
+        var id = arrayDeMovies[i].id
+        var png = arrayDeMovies[i].poster_path
+        document.querySelector("ul.uk-slider-items").innerHTML += "<li class="+"uk-transition-toggle"+ "tabindex="+"0"+"><a href=detalleSerie.html?idPeli=" + id + "><img src=" + "https://image.tmdb.org/t/p/w500" +png+"></a><div class="+"uk-position-center uk-panel"+"><h1 class=" + "uk-transition-slide-bottom-small"+">1</h1></div></li>"
+      }
+
+    })
+    .catch(function(error) {
+      console.log("Error: " + error);
+    })
+
 /* scroll para que ponga mas series automaticamente al bajar */
   var cont= 2; //esto va incrementando para el codigo. pongo 2 para que traiga la pagina 2 del genero tal
 window.onscroll = function(ev) {

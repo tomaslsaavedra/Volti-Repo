@@ -168,14 +168,12 @@ body {
 .seriespopulares {
   text-align: center;
   padding: 25px;
-border: dashed;
 margin: 10px 5px;
 }
 
 .seriesconmayorpuntaje {
   text-align: center;
   padding: 25px;
-border: dashed;
 margin: 10px 5px;
 }
 
@@ -183,7 +181,6 @@ margin: 10px 5px;
   text-align: center;
 
  padding: 25px;
-border: dashed;
 margin: 10px 5px;
 }
 
@@ -231,4 +228,43 @@ a {
 
 a:hover {
   color: black;
+}
+
+
+/* aca va a venir los tamaños para cada pagina segun computadora
+ tablet o telefono */
+
+@media (max-width: 850px) {
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+
+/* MEDIA QUERY PARA TABLET (Ancho máximo 750px) */
+@media (min-width: 451px) and (max-width: 750px){
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+    .uk-navbar-center{
+      width: 100%;
+    }
+}
+
+/* MEDIA QUERY PARA SMARTPHONE (Ancho máximo 450px) */
+@media (min-width: 0px) and (max-width: 450px){
+    .uk-navbar-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .uk-navbar-left{
+      width: 100%;
+    }
+    
 }

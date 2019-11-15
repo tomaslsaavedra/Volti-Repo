@@ -64,6 +64,12 @@ body {
      background-image:url("../img/colorFondo.png");
 }
 
+/* buscador general grande */
+.contenedorBuscadorGeneral{
+
+height: : 5vh;
+}
+
 /* resultado del buscador */
 #main{
   margin-top: 10px;
