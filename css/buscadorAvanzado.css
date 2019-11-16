@@ -33,6 +33,18 @@ div.contenedorTitulos{
     border-bottom: 1px solid #bbb;
 }
 
+/* boton login */
+.botonLogin{
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 4vh;
+  left: 75vh;
+}
+
 /*buscador*/
 
 .contenedorBuscador{

@@ -33,6 +33,18 @@ div.contenedorTitulos{
     border-bottom: 1px solid #bbb;
 }
 
+/* boton login */
+.botonLogin{
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 4vh;
+  left: 75vh;
+}
+
 /*buscador*/
 
 .contenedorBuscador{
@@ -95,6 +107,7 @@ body {
 
 .contenedorBotonRecomendadas{
   position: relative;
+  top: -5vh;
   left: 80vh;
   padding: 5vh;
   align-items: center;
@@ -102,11 +115,22 @@ body {
 
 .contenedorBotonRecomendadas2{
   position: relative;
+  top: 0vh;
   left: 80vh;
   padding: 5vh;
   align-items: center;
 }
 
+/* boton agregar a favoritos */
+.favorito{
+  border: 0px solid;
+  width: 180px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+}
 
 /* Footer */
 

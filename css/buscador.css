@@ -34,6 +34,18 @@ div.contenedorTitulos{
     border-bottom: 1px solid #bbb;
 }
 
+/* boton login */
+.botonLogin{
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  position: absolute;
+  top: 4vh;
+  left: 75vh;
+}
+
 /*buscador*/
 
 .contenedorBuscador{
@@ -64,15 +76,28 @@ body {
      background-image:url("../img/colorFondo.png");
 }
 
+.tituloBuscador{
+  font-size: 5px;
+}
+.contenedorTituloBuscador{
+  position: absolute;
+  top: 20vh;
+  left: 85vh;
+}
+
 /* buscador general grande */
 .contenedorBuscadorGeneral{
-
-height: : 5vh;
+  position: relative;
+  top: 15vh;
+  left: 60vh;
+  height: :10vh;
+  width: 90vh;
+  border: 1px solid gray;
 }
 
 /* resultado del buscador */
 #main{
-  margin-top: 10px;
+  margin-top: 20vh;
 }
 
 .prox{
