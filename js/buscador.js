@@ -1,5 +1,5 @@
 /* buscador */
-//todo esto esta explicado en otros javas.
+//todo esto esta explicado en otros javascripts.
 window.onload = function() {
   var queryString = new URLSearchParams(location.search)
   var busco = queryString.get("buscador")
@@ -22,7 +22,6 @@ window.onload = function() {
           })
           .then(function(informacion) {
                 var arrayBusqueda = informacion.results
-                console.log(arrayBusqueda);
                 for (var i = 0; i < arrayBusqueda.length; i++) {
                   var png = arrayBusqueda[i].poster_path;
                   var id = arrayBusqueda[i].id
@@ -43,7 +42,11 @@ fetch("https://api.themoviedb.org/3/search/tv?api_key=e31dd59fefbc10e65215ecd077
   })
   .then(function(informacion) {
         var arrayBusqueda = informacion.results
-        console.log(arrayBusqueda);
+        console.log(arrayBusqueda.length);
+        if (arrayBusqueda.length < 1) {
+          alert("No se han encontrado resultados");
+          window.location = "/buscadorAvanzado.html"
+        }
         for (var i = 0; i < arrayBusqueda.length; i++) {
           var png = arrayBusqueda[i].poster_path;
           var id = arrayBusqueda[i].id
