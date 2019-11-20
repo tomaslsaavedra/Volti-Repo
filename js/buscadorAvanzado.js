@@ -27,12 +27,12 @@ fetch("https://api.themoviedb.org/3/genre/tv/list?api_key=e31dd59fefbc10e65215ec
       var nombre = arrayGeneros[i].name
       var id = arrayGeneros[i].id
       var li;
-//estructura que va a linkear donde posicionarlos
       li = '<li>'
       li += '<a href=listaGeneros.html?idGenero=' + id + '&genero='+nombre+'>' + nombre + '</a>'
       li += '</li>'
-//estilo selector para los genros
+//estructura que va a linkear donde posicionarlos
       document.querySelector("ul.gen").innerHTML += li
+      document.querySelector("ul.gen2").innerHTML += li
     }
 
   })
