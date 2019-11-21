@@ -43,6 +43,7 @@ div.contenedorTitulos{
   position: absolute;
   top: 4vh;
   left: 75vh;
+  cursor: pointer;
 }
 
 /*buscador*/
