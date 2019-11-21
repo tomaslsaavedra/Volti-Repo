@@ -26,12 +26,6 @@ div.contenedorTitulos{
 }
 .li-a{
   font-family: sans-serif;
-    list-style: none;
-    text-decoration: none;
-}
-
-.favLogOut{
-      text-decoration: none;
 }
 
 .uk-navbar-container:not(.uk-navbar-transparent) {
@@ -56,7 +50,7 @@ div.contenedorTitulos{
 .contenedorBuscador{
 position: absolute;
 right: 4vh;
-top: 4vh;
+top: 3vh;
 }
 
 .buscar{
@@ -77,12 +71,9 @@ body {
   font-size:17px;
   color: rgba(133, 11, 11, 0.863);
   line-height: 1.6;
-}
-
-/*listado pelicuals por genero */
-#main{
    background-image:url("../img/colorFondo.png");
 }
+
 
 .prox{
   font-size: 32px;
@@ -93,8 +84,8 @@ body {
 .ul-fotos{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
   list-style:none;
+    justify-content: space-around;
   position: relative;
   right: 13px;
 }
@@ -110,9 +101,6 @@ body {
   margin-bottom: 15px;
 }
 
-.fotoswrap{
-  min-height: 100vh;
-}
 
 /* Footer */
 

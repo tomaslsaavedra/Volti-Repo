@@ -60,11 +60,6 @@ top: 4vh;
   display: flex;
 }
 
-.iconoBuscador{
-  color:white;
-    height: 8vh;
-}
-
 body {
   margin:0;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

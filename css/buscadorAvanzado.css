@@ -74,6 +74,47 @@ body {
    background-image:url("../img/colorFondo.png");
 }
 
+/* aca va el estilo del buscador avanzado */
+
+#formularioBusquedaAvanzada {
+  background-image: url("../img/pochoclos.jpeg");
+  border-radius: 20px;
+  width: 65%;
+  height: 60%;
+  color:white;
+  transition: 2320ms;
+  position: relative;
+  left: 30vh;
+}
+
+#formularioBusquedaAvanzada2{
+  border: 0px solid black;
+  padding: 20px;
+}
+
+textarea{
+  width: 60vh;
+  height: 15vh;
+  border-radius: 20px;
+}
+
+input.datos{
+  width: 60vh;
+  height: 3vh;
+  border: 1px solid black;
+  border-radius: 80px;
+}
+
+#botonBusquedaAvanzada{
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 80px;
+  width: 10vh;
+  height: 6vh;
+  cursor:pointer;
+}
+
 /* Footer */
 
 #section-a {
