@@ -54,11 +54,12 @@ right: 4vh;
 top: 3vh;
 }
 
-.buscar{
- border-radius: 40px;
- height: 4vh;
- justify-content: center;
- display: flex;
+#buscar2{
+  border-radius: 40px;
+  height: 4vh;
+  width: 28vh;
+  justify-content: center;
+  display: flex;
 }
 
 .iconoBuscador{
@@ -77,43 +78,48 @@ body {
 
 /* aca va el estilo del buscador avanzado */
 
-#formularioBusquedaAvanzada {
+.formularioAvanzado {
   background-image: url("../img/pochoclos.jpeg");
   border-radius: 20px;
   width: 65%;
-  height: 60%;
+  height: 50%;
   color:white;
   transition: 2320ms;
   position: relative;
   left: 30vh;
-}
-
-#formularioBusquedaAvanzada2{
-  border: 0px solid black;
+  font-size: 30px;
   padding: 20px;
 }
 
-textarea{
-  width: 60vh;
-  height: 15vh;
-  border-radius: 20px;
-}
-
-input.datos{
-  width: 60vh;
-  height: 3vh;
-  border: 1px solid black;
-  border-radius: 80px;
-}
-
-#botonBusquedaAvanzada{
+.buscar{
   background-color: black;
   color: white;
   border: 1px solid black;
   border-radius: 80px;
   width: 10vh;
-  height: 6vh;
+  height: 5vh;
   cursor:pointer;
+  margin: 10px;
+}
+
+.resultadosBusqueda{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style:none;
+  position: relative;
+  right: 13px;
+}
+
+.col-lg-4{
+  width: 30%;
+}
+
+
+
+#generosDeseados, #generosExcluidos, #orden, #anio{
+  color: black;
+  height: 30px;
 }
 
 /* Footer */
